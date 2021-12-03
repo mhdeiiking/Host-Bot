@@ -1,6 +1,6 @@
 import telebot,random,os,requests
 from telebot import types
-bot = telebot.TeleBot('#Your Telegram Bot Token!')
+bot = telebot.TeleBot('5024049747:AAEF1InZ04spo_enuqvS2RWveamHaf_2swg')
 
 # Github: https://github.com/PluginX
 # Telegram: https://t.me/Plugin
@@ -17,14 +17,14 @@ def send_welcome(message):
         if str(message.chat.id) in data:
 
             key = types.InlineKeyboardMarkup()
-            b1 = types.InlineKeyboardButton(text='Channel', url='https://t.me/CodeLeak')
-            b2 = types.InlineKeyboardButton(text='apis.red', url='https://apis.red')
+            b1 = types.InlineKeyboardButton(text='Admin', url='https://t.me/A_4_C')
+            b2 = types.InlineKeyboardButton(text='Channel', url='https://t.me/MonsterDark')
 
             key.add(b1)
             key.add(b2)
 
             bot.send_photo(message.chat.id, 'https://t.me/thuuu/8',
-                           caption=f'Hi {first}.\nWelcome to our free python host bot\nMade By: @Plugin\n\nPlease see the photo!\n*Send your python file first!*\n\n/help\n *To get the help page*\n\n/pip + Library name\n *To install a Library*\n\n/run + Your file Id\n *To run your bot!*',
+                           caption=f'Hi {first}.\nWelcome to our free python host bot\nMade By: @A_4_C\n\nPlease see the photo!\n*Send your python file first!*\n\n/help\n *To get the help page*\n\n/pip + Library name\n *To install a Library*\n\n/run + Your file Id\n *To run your bot!*',
                            parse_mode='markdown', reply_markup=key)
         else:
             try:
@@ -89,10 +89,10 @@ def Get(message):
                 try:
 
                     key = types.InlineKeyboardMarkup()
-                    b1 = types.InlineKeyboardButton(text='Coder', url='https://t.me/Plugin')
+                    b1 = types.InlineKeyboardButton(text='Coder', url='https://t.me/A_4_c')
                     key.add(b1)
 
-                    bot.send_message(message.chat.id, text="*Help Page* 📑\n1- Drag your python file to the bot\n2- Then the bot will give you *File ID*\n\n3- Then install your Librarys\n 🔍 using /pip + *library name*\n\n4- Run your bot\n 🔍 using /run + *File iD*\n\n*Contact*: @Plugin", parse_mode='markdown', reply_markup=key)
+                    bot.send_message(message.chat.id, text="*Help Page* 📑\n1- Drag your python file to the bot\n2- Then the bot will give you *File ID*\n\n3- Then install your Librarys\n 🔍 using /pip + *library name*\n\n4- Run your bot\n 🔍 using /run + *File iD*\n\n*Contact*: @A_4_C", parse_mode='markdown', reply_markup=key)
 
                 except:
                     bot.send_message(message.chat.id,text=f"sorry! you leave something empty!\nOr you are missing some requires\nPlease see the photo in /start ")
@@ -105,10 +105,10 @@ def Get(message):
                 bot.send_message(message.chat.id,
                                  text=f"*Hi* {first}.\nWelcome to our free python host bot\n\n*You are not on the database please open this url so i can add your id on the bot database you have been added to the bot database* \n\nhttps://apis.red/api/python-host/?id={str(message.chat.id)}\n\nWhen you are done type /start again!",parse_mode='markdown')
             except:
-                bot.send_message(message.chat.id, text="*API is down* 🚫\nPlease contact the coder: @Plugin",
+                bot.send_message(message.chat.id, text="*API is down* 🚫\nPlease contact the coder: @ttrakos",
                                  parse_mode='markdown')
     except:
-        bot.send_message(message.chat.id, text="*API is down* 🚫\nPlease contact the coder: @Plugin",
+        bot.send_message(message.chat.id, text="*API is down* 🚫\nPlease contact the coder: @ttrakos",
                          parse_mode='markdown')
 
 
